@@ -17,7 +17,10 @@ app.get('/', function (req, res) {
        res.send('HOUSSEIN')
     })
 // your code
-
+app.get('/', function (req, res) {
+    let data =[{id:1,name:'ali'},{id:2,name:'houssein'},{id:e,name:'sophie'}]
+    res.send(data);
+})
 app.listen(PORT, () => {
   console.log(`server started on port ${PORT}`);
 });
