@@ -13,12 +13,12 @@ var cors = require('cors');
 const app = express();
 app.use(cors());
 const PORT = process.env.PORT || 3030;
-// app.get('/', function (req, res) {
-//        res.send('HOUSSEIN')
-//     })
+  // app.get('/', function (req, res) {
+  //     res.send('HOUSSEIN')
+  //    })
 // your code
-app.get('/', function (req, res) {
-    let data =[{id:1,name:'ali'},{id:2,name:'housein'},{id:e,name:'sophie'}]
+ app.get('/', function (req, res) {
+    let data =[{id:1,name:'ali'},{id:2,name:'housein'},{id:3,name:'sophie'}]
     res.send(data);
 })
 app.listen(PORT, () => {
